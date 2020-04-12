@@ -1,5 +1,10 @@
 #!/bin/bash
 
+str=`MotionPro -a`
+if [[ $str =~ "idle" ]];then
+	sh /root/code/connect.sh
+fi
+
 username="XXX"
 password="XXX"
 
